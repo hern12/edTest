@@ -16,7 +16,7 @@
   margin-bottom: 50px;
 }
 
-.MenuBox h2,.galleryBox h2{
+.MenuBox h2,.galleryBox h2,.PlaceBox h2{
   margin-bottom: 20px;
   font-size: 30px;
   text-align: center;
@@ -83,10 +83,16 @@
   position: relative;
 }
 
-video#vid {
-  position: absolute; right: 0; bottom: 0;
-  min-width: 100%; min-height: 100%;
-  width: auto; height: auto; z-index: -100;
+.locate .pBox{
+  display: block;
+  width: 70%;
+  margin:0 auto;
+  font-size: 24px;
+}
+
+.map{
+  background-image: url('../images/map.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 auto;
 }

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class PopularMenuItem extends Component{
 	render(){
 		return ( 
-			<div className="column menu-item">
+			<div className="column menu-item is-3">
 				<img className="popImg" src={this.props.itemImgUrl} width="70" height="130"/>
 				<h3 className="popTitile">{this.props.MenuName}</h3>
 				<div className="likeBox">

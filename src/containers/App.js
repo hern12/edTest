@@ -6,7 +6,7 @@ import Navbar from '../components/navbar.js';
 import Ads from '../components/Ads.js';
 import PopularMenu from '../components/PopularMenu.js'
 import Gallery from '../components/Gallery.js'
-
+import Place from '../components/Place.js'
 
 class App extends Component {
   render() {
@@ -17,6 +17,7 @@ class App extends Component {
           <Ads />
           <PopularMenu />
           <Gallery isOpen="true"/>
+          <Place />
         </div>
       </div>
     );

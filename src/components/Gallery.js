@@ -11,9 +11,10 @@ class Gallery extends Component{
 				  imageUrl: [],
 				  count:0
             }
-    }
+	}
+	// 'https://endless-web.herokuapp.com/'
 	componentDidMount() {
-		axios.get('https://endless-web.herokuapp.com/')
+		axios.get('http://localhost:8080/')
 		  .then(res => {
 			var newMap = []
 			var imageUrl = res.data.data.map(function(d,i){

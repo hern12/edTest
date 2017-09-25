@@ -30,6 +30,21 @@ class PopularMenu extends Component{
 				imgUrl : process.env.PUBLIC_URL + '/images/popular1.png',
 				menuTitle : 'Thai Gangster',
 				like:"41"
+			},
+			{
+				imgUrl : process.env.PUBLIC_URL + '/images/popular1.png',
+				menuTitle : 'Thai Gangster',
+				like:"20"
+			},
+			{
+				imgUrl : process.env.PUBLIC_URL + '/images/popular1.png',
+				menuTitle : 'Thai Gangster',
+				like:"35"
+			},
+			{
+				imgUrl : process.env.PUBLIC_URL + '/images/popular1.png',
+				menuTitle : 'Thai Gangster',
+				like:"46"
 			},			
 		];
 		var MenuItemList = MenuItem.map(function(object,index){
@@ -38,7 +53,7 @@ class PopularMenu extends Component{
 		return ( 
 			<div className="MenuBox">
 				<h2>-- Popular Menu --</h2>
-				<div className="ItemBox columns">
+				<div className="ItemBox columns is-multiline">
 					{MenuItemList}
 				</div>
 			</div>
