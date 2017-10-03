@@ -1,25 +1,30 @@
 import React, { Component } from 'react';
+import {
+	BrowserRouter as Router,
+	Route,
+	Link
+  } from 'react-router-dom'
 import 'bulma/css/bulma.css';
 import './App.css';
 import 'font-awesome/css/font-awesome.min.css';
-import Navbar from '../components/navbar.js';
-import Ads from '../components/Ads.js';
-import PopularMenu from '../components/PopularMenu.js'
-import Gallery from '../components/Gallery.js'
-import Place from '../components/Place.js'
+import Navbar from '../components/navbar.js'; 
+import Home from './Home';
+import Menu from './Menu';
+import About from './About';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <Navbar/>
-          <Ads />
-          <PopularMenu />
-          <Gallery isOpen="true"/>
-          <Place />
+      <Router>
+        <div className="App">
+          <div className="App-header">
+            <Navbar/>
+            <Route exact path="/" component={Home}/>
+            <Route path="/Menu" component={Menu}/>
+            <Route path="/about" component={About}/>
+          </div>
         </div>
-      </div>
+      </Router>
     );
   }
 }

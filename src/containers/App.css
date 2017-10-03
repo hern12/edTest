@@ -2,6 +2,10 @@
   margin-right: 5px;
 }
 
+.Box,.aboutBox,.MenuBox{
+  margin-top:52px;
+}
+
 .imgBox{
   background-image: url('../images/endlessAds.jpg');
   background-position: center;
@@ -90,6 +94,25 @@
   font-size: 24px;
 }
 
+.socialPad{
+  padding:0px 5px;
+}
+.socialMar{
+  margin-top:10px;
+  margin-right:5px;
+}
+
+.btnCentered{
+  display: block;
+  margin: 0 auto;
+  padding: 0.75rem;
+  width: 100%;
+}
+.fullBtn{
+  width: 100%;
+}
+
+.navbar { position: fixed !important; top: 0; left: 0; right: 0; z-index: 99999}
 /* .map{
   background-image: url('../images/map.jpg');
   background-position: center;

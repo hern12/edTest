@@ -32,9 +32,12 @@ class Gallery extends Component{
 						<h2>-- Endless Memory --</h2>
 						<div className='imageGalBox'>
 							<div className='columns is-multiline'>
-							{this.state.imageUrl.map((img12,i) =>
-								<ImageItems itemImgUrl={img12.imgUrl} imgCurrent={i} key={i}/>
-							)}
+								{this.state.imageUrl.map((img12,i) =>
+									<ImageItems itemImgUrl={img12.imgUrl} imgCurrent={i} key={i}/>
+								)}
+								<div className="btnCentered">
+									<a className="button is-dark fullBtn is-medium">More</a>
+								</div>
 							</div>
 						</div>
 					</div>
